@@ -1,0 +1,47 @@
+body {
+  background-color: #1a1a1a;
+  color: white; 
+}
+
+.movies-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.card {
+  width: 300px;
+  margin: 20px;
+  border: none; 
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(255, 223, 0, 0.2);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #ddd;
+}
+
+.content {
+  padding: 10px;
+}
+
+.content p {
+  margin: 0;
+  font-size: 16px;
+  color: white; 
+}
+
+.content p:first-child {
+  font-weight: bold;
+  margin-bottom: 8px;
+}
